@@ -3,299 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DigitalProfi - Образовательная платформа</title>
+    <title>HandmadeMaster - Маркетплейс изделий ручной работы</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
+    <header class="header">
         <div class="container">
-            <div class="logo">
-                <h1>Digital<span>Profi</span></h1>
-            </div>
-            <div class="slogan">
-                <p>Освой цифровой минимум - выбери свой профессиональный максимум!</p>
-            </div>
-            <nav id="nav">
+            <h1 class="logo">HandmadeMaster</h1>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#home">Главная</a></li>
-                    <li><a href="#courses">Курсы</a></li>
-                    <li><a href="#benefits">Преимущества</a></li>
-                    <li><a href="#testimonials">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#categories">Категории</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </header>
 
-    <section id="home" class="section">
+    <section class="hero">
         <div class="container">
-            <div class="about-platform reveal">
-                <h2>О платформе</h2>
-                <p>DigitalProfi - образовательная платформа для специалистов, которые хотят повысить цифровую грамотность и освоить современные ИТ-инструменты для своей профессии. Базовые и углублённые курсы, сертификаты, поддержка экспертов.</p>
-                <a href="#courses" class="btn">Смотреть курсы</a>
+            <h2 class="hero-title">Ваше творчество в надежных руках</h2>
+            <p class="hero-subtitle">Маркетплейс изделий ручной работы для мастеров 50+</p>
+            <button class="join-button">Присоединиться</button>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Категории изделий</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="knitting">
+                    <div class="category-image">
+                        <img src="images/knitting.jpg" alt="Вязаные изделия">
+                    </div>
+                    <h3 class="category-title">Вязаные изделия</h3>
+                    <p class="category-description">Уютные свитера, шарфы, шапки и другие вязаные изделия</p>
+                </div>
+                <div class="category-card" data-category="woodwork">
+                    <div class="category-image">
+                        <img src="images/woodwork.jpg" alt="Деревянные изделия">
+                    </div>
+                    <h3 class="category-title">Деревянные изделия</h3>
+                    <p class="category-description">Резные шкатулки, игрушки и предметы интерьера из дерева</p>
+                </div>
+                <div class="category-card" data-category="ceramics">
+                    <div class="category-image">
+                        <img src="images/ceramics.jpg" alt="Керамика">
+                    </div>
+                    <h3 class="category-title">Керамика</h3>
+                    <p class="category-description">Посуда, вазы и декоративные изделия из керамики</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="courses" class="section">
+    <section id="about" class="about">
         <div class="container">
-            <h2>Наши курсы</h2>
-            <div class="courses-grid">
-                <div class="course-card basic reveal">
-                    <div class="course-icon">
-                        <i class="fas fa-laptop"></i>
+            <h2 class="section-title">О платформе</h2>
+            <div class="about-content">
+                <p class="about-text">HandmadeMaster - это место, где опыт и творчество встречаются. Здесь мастера старшего возраста могут делиться своими работами, вдохновляться и находить новых друзей.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Творчество</h3>
+                        <p>Создавайте и продавайте уникальные изделия</p>
                     </div>
-                    <div class="course-details">
-                        <h3>Базовый курс</h3>
-                        <p>Основы цифровых навыков для всех: работа с данными, безопасность, современные ИТ-инструменты.</p>
-                        <div class="course-price">1 500 руб.</div>
+                    <div class="feature">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Общение</h3>
+                        <p>Находите единомышленников и делитесь опытом</p>
                     </div>
-                    <div class="card-buttons">
-                        <button class="btn details-btn" data-course="basic">Подробнее</button>
-                        <button class="btn enroll-btn">Записаться</button>
-                    </div>
-                </div>
-                
-                <div class="course-card special reveal">
-                    <div class="course-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="course-details">
-                        <h3>Углублённый курс для бухгалтеров</h3>
-                        <p>1С, электронный документооборот, онлайн-отчётность.</p>
-                        <div class="course-price">5 000 руб.</div>
-                    </div>
-                    <div class="card-buttons">
-                        <button class="btn details-btn" data-course="accounting">Подробнее</button>
-                        <button class="btn enroll-btn">Записаться</button>
-                    </div>
-                </div>
-                
-                <div class="course-card special reveal">
-                    <div class="course-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <div class="course-details">
-                        <h3>Углублённый курс для медработников</h3>
-                        <p>Работа с медицинскими ИТ-системами, телемедицина, защита данных пациентов.</p>
-                        <div class="course-price">5 000 руб.</div>
-                    </div>
-                    <div class="card-buttons">
-                        <button class="btn details-btn" data-course="medical">Подробнее</button>
-                        <button class="btn enroll-btn">Записаться</button>
-                    </div>
-                </div>
-                
-                <div class="course-card special reveal">
-                    <div class="course-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <div class="course-details">
-                        <h3>Углублённый курс для логистов</h3>
-                        <p>Цифровые ТМС, электронные накладные, GPS-трекинг.</p>
-                        <div class="course-price">5 000 руб.</div>
-                    </div>
-                    <div class="card-buttons">
-                        <button class="btn details-btn" data-course="logistics">Подробнее</button>
-                        <button class="btn enroll-btn">Записаться</button>
+                    <div class="feature">
+                        <div class="feature-icon">💰</div>
+                        <h3>Доход</h3>
+                        <p>Получайте достойную оплату за свое мастерство</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="benefits" class="section">
+    <section id="faq" class="faq">
         <div class="container">
-            <h2>Наши преимущества</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Актуальные знания от экспертов</h3>
-                    <p>Все курсы разработаны действующими специалистами с многолетним опытом работы</p>
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Как начать продавать свои изделия?</div>
+                    <div class="faq-answer">Зарегистрируйтесь на платформе, создайте свой профиль мастера и добавьте фотографии ваших работ. Мы поможем вам на каждом этапе!</div>
                 </div>
-                
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Сертификаты установленного образца</h3>
-                    <p>По окончании обучения вы получите документ, подтверждающий ваши новые компетенции</p>
+                <div class="faq-item">
+                    <div class="faq-question">Сколько стоит размещение товаров?</div>
+                    <div class="faq-answer">Размещение товаров на платформе абсолютно бесплатно. Мы берем небольшую комиссию только после успешной продажи.</div>
                 </div>
-                
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Гибкое онлайн-обучение</h3>
-                    <p>Учитесь в удобное время, в любом месте и на любом устройстве</p>
-                </div>
-                
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>Поддержка и консультации</h3>
-                    <p>Индивидуальные консультации с преподавателями и кураторами на протяжении всего обучения</p>
+                <div class="faq-item">
+                    <div class="faq-question">Как происходит доставка?</div>
+                    <div class="faq-answer">Вы можете выбрать удобный способ доставки: почтой России, курьерской службой или договориться о личной встрече с покупателем.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="section">
-        <div class="container">
-            <h2>Отзывы наших учеников</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-avatar">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Анна">
-                    </div>
-                    <div class="testimonial-content">
-                        <h3>Анна Иванова</h3>
-                        <h4>Бухгалтер</h4>
-                        <p>"Прошла углубленный курс для бухгалтеров и наконец-то разобралась со всеми нюансами электронного документооборота. Преподаватели объясняют очень доступно и всегда готовы помочь. Рекомендую!"</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-avatar">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Сергей">
-                    </div>
-                    <div class="testimonial-content">
-                        <h3>Сергей Петров</h3>
-                        <h4>Врач-терапевт</h4>
-                        <p>"Благодаря курсу для медработников, я теперь уверенно пользуюсь электронной медицинской картой и провожу онлайн-консультации. Это значительно упростило мою работу и сэкономило много времени."</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-avatar">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Елена">
-                    </div>
-                    <div class="testimonial-content">
-                        <h3>Елена Смирнова</h3>
-                        <h4>Логист</h4>
-                        <p>"Курс превзошел все мои ожидания! Научилась работать с современными системами логистического учета, что позволило оптимизировать маршруты доставки и сократить издержки компании."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="feedback" class="section">
-        <div class="container">
-            <h2>Остались вопросы?</h2>
-            <p>Заполните форму, и мы свяжемся с вами в ближайшее время</p>
-            <form id="feedback-form" class="reveal">
-                <div class="form-group">
-                    <label for="name">Имя*</label>
-                    <input type="text" id="name" name="name" required>
-                    <div class="error-message"></div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="error-message"></div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Комментарий/Вопрос*</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <div class="error-message"></div>
-                </div>
-                
-                <button type="submit" class="btn submit-btn">Отправить</button>
-            </form>
-            <div id="form-success" class="hidden">
-                <div class="success-message">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Спасибо!</h3>
-                    <p>Мы свяжемся с вами в ближайшее время.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacts" class="section">
-        <div class="container">
-            <h2>Контакты</h2>
-            <div class="contacts-grid reveal">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:info@digitalprofi.ru">info@digitalprofi.ru</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Телефон</h3>
-                    <p><a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                    <h3>Социальные сети</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Digital<span>Profi</span></h2>
-                    <p>Образовательная платформа, помогающая специалистам адаптироваться к современным цифровым требованиям.</p>
-                </div>
+
                 <nav class="footer-nav">
                     <ul>
-                        <li><a href="#home">Главная</a></li>
-                        <li><a href="#courses">Курсы</a></li>
-                        <li><a href="#benefits">Преимущества</a></li>
-                        <li><a href="#testimonials">Отзывы</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#categories">Категории</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="copyright">
-                <p></p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Windows for Course Details -->
-    <div id="modal-overlay" class="hidden">
-        <div id="course-modal" class="modal">
+    <!-- Модальные окна для категорий -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
             <div class="modal-header">
-                <h2 id="modal-title"></h2>
-                <button id="close-modal" class="close-btn" aria-label="Закрыть">
-                    <i class="fas fa-times"></i>
-                </button>
+                <h3 class="modal-title"></h3>
+                <button class="modal-close">×</button>
             </div>
-            <div class="modal-content" id="modal-content">
-                <!-- Content will be added dynamically with JavaScript -->
-            </div>
+            <div class="modal-content"></div>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
-    <script src="fix-modal.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
